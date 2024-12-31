@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <label for="slider">Adjust the values:</label><br /><br />
+      <div class="values">
+        <label for="slider-min">Minimum Value:</label>
+        <span id="minValue" class="minimum-value">2000</span>
+        <br />
+        <br />
+        <label for="slider-max">Maximum Value:</label>
+        <span id="maxValue" class="maximum-value">8000</span><br /><br />
+      </div>
+    </div>
+    <div class="slider-wrapper">
+      <input
+        type="range"
+        id="sliderMin"
+        class="slider"
+        min="0"
+        max="10000"
+        value="2000"
+      />
+      <input
+        type="range"
+        id="sliderMax"
+        class="slider"
+        min="0"
+        max="10000"
+        value="8000"
+      />
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

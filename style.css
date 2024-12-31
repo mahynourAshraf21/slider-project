@@ -1,0 +1,54 @@
+/* Centering the slider container */
+.slider-container {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Wrapping the sliders in a relative container */
+.slider-wrapper {
+  position: relative;
+  width: 500px; /* Fixed width for the slider container */
+  height: 8px; /* Set the height for the track */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling the slider (track) */
+.slider {
+  position: absolute;
+  width: 100%; /* Make it span the entire container */
+  height: 8px;
+  background: #ddd;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.2s; /* Smooth transition for background */
+}
+
+/* Styling the slider thumb (handle) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Size of the thumb */
+  height: 20px;
+  background: #4caf50; /* Green thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2; /* To keep the thumb on top */
+}
+
+/* Styling the values section */
+.values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 16px;
+}
